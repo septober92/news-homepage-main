@@ -1,0 +1,128 @@
+.news-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header--logo {
+  width: 90%;
+}
+
+.header--nav {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.5rem;
+}
+
+/* .header--nav li a {
+  color: #eee;
+} */
+
+.header--nav-link:link,
+.header--nav-link:visited {
+  color: var(--dark-grayish-blue);
+  transition: all 0.2s;
+}
+
+.header--nav-link:hover,
+.header--nav-link:active {
+  color: var(--soft-red);
+}
+
+/* news box styling */
+
+.news-box {
+  display: grid;
+  grid-template-columns: 2.3fr 1fr;
+  gap: 3rem;
+}
+
+.news-box--headline {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 10rem;
+  row-gap: 3rem;
+}
+
+.headline--img-box {
+  grid-column: 1 / 3;
+}
+
+.headline-img {
+  width: 100%;
+}
+
+.heading-primary {
+  font-weight: 800;
+  font-size: 5.2rem;
+}
+
+.headline-description-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.headline-description {
+  font-size: 1.5rem;
+  color: var(--dark-grayish-blue);
+  line-height: 1.6;
+}
+
+.headline-description-btn:link,
+.headline-description-btn:visited {
+  display: inline-block;
+  padding: 1.5rem 3rem;
+  background-color: var(--soft-red);
+  color: var(--off-white);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 700;
+  transition: all 0.2s;
+}
+
+.headline-description-btn:hover,
+.headline-description-btn:active {
+  background-color: var(--very-dark-blue);
+}
+
+/* aside section styling */
+
+.news-box--aside {
+  background-color: var(--very-dark-blue);
+  padding: 3.5rem 3rem;
+}
+
+.heading-secondary {
+  color: var(--soft-orange);
+  font-weight: 700;
+  font-size: 4rem;
+  margin-bottom: 4rem;
+}
+
+.heading-tertiary a:link,
+.heading-tertiary a:visited {
+  color: var(--off-white);
+  font-size: 2rem;
+  transition: all 0.2s;
+}
+
+.heading-tertiary a:hover,
+.heading-tertiary a:active {
+  color: var(--soft-orange);
+}
+
+.aside-preview-text {
+  color: var(--grayish-blue);
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-top: 0.8rem;
+}
+
+.news-box--aside hr {
+  border: none;
+  border-top: 1px solid var(--grayish-blue);
+  margin: 4rem 0;
+}
