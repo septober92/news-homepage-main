@@ -53,6 +53,10 @@
   width: 100%;
 }
 
+.headline-img-mobile {
+  display: none;
+}
+
 .heading-primary {
   font-weight: 800;
   font-size: 5.2rem;
