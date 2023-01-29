@@ -43,3 +43,13 @@ body {
 .mb-medium {
   margin-bottom: 6rem;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 88.3%;
+}
+
+.sticky + main {
+  padding-top: 102px;
+}

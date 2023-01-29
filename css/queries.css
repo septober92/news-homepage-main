@@ -1,6 +1,6 @@
 @media (max-width: 26.875em) {
   body {
-    margin: 3rem auto;
+    margin: 0 auto;
     max-width: calc(100% - 5rem);
     font-size: 1.5rem;
   }
@@ -12,7 +12,9 @@
   }
 
   .news-header {
-    margin-bottom: 3rem;
+    margin: 0;
+    padding: 3rem 0;
+    background-color: #fff;
   }
 
   /* MOBILE NAV */
@@ -84,7 +86,7 @@
     padding-left: 3rem;
     background: hsl(0, 0%, 100%);
     transform: translateX(100%);
-    transition: transform 0.5s;
+    transition: transform 0.2s;
 
     flex-direction: column;
     align-items: flex-start;
