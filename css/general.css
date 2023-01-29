@@ -34,22 +34,27 @@ html {
 }
 
 body {
-  margin: 8rem auto;
-  max-width: calc(100% - 26rem);
+  margin: 6rem auto;
+  /* max-width: calc(100% - 25rem); */
   font-size: 1.5rem;
   /* position: relative; */
+}
+
+main {
+  padding: 0 12.5rem;
 }
 
 .mb-medium {
   margin-bottom: 6rem;
 }
 
-.sticky {
+/* .sticky {
   position: fixed;
   top: 0;
-  width: 88.3%;
+  width: calc(100% - 26rem);
+ 
 }
 
 .sticky + main {
-  padding-top: 102px;
-}
+  padding-top: 8rem;
+} */

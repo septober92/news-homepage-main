@@ -10,24 +10,24 @@ function toggle() {
   } else {
     nav.classList.add('mobile-nav-open');
     menu.style.display = 'block';
-    dimbkg.style.display = 'block';
+    dimbkg.style.display = 'none';
   }
 }
 
 menu.addEventListener('click', toggle);
 
 // sticky header
-window.onscroll = function () {
-  myFunction();
-};
+// window.onscroll = function () {
+//   myFunction();
+// };
 
-var header = document.getElementById('news-header');
-var sticky = header.offsetTop;
+// var header = document.getElementById('news-header');
+// var sticky = header.offsetTop;
 
-function myFunction() {
-  if (window.pageYOffset > sticky) {
-    header.classList.add('sticky');
-  } else {
-    header.classList.remove('sticky');
-  }
-}
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.classList.add('sticky');
+//   } else {
+//     header.classList.remove('sticky');
+//   }
+// }
