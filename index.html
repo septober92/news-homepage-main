@@ -18,23 +18,34 @@
     <title>Frontend Mentor | News homepage</title>
   </head>
   <body>
-    <header class="news-header mb-medium">
-      <div class="header--logo-box">
-        <img src="/assets/images/logo.svg" alt="W. Logo" class="header--logo" />
+    <div class="dim-bkg"></div>
+    <header class="news-header">
+      <div class="header-logo-box">
+        <img src="/assets/images/logo.svg" alt="W. Logo" class="header-logo" />
       </div>
 
-      <ul class="header--nav">
-        <li><a class="header--nav-link" href="#">Home</a></li>
-        <li><a class="header--nav-link" href="#">New</a></li>
-        <li><a class="header--nav-link" href="#">Popular</a></li>
-        <li><a class="header--nav-link" href="#">Trending</a></li>
-        <li><a class="header--nav-link" href="#">Categories</a></li>
-      </ul>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">New</a></li>
+          <li><a class="main-nav-link" href="#">Popular</a></li>
+          <li><a class="main-nav-link" href="#">Trending</a></li>
+          <li><a class="main-nav-link" href="#">Categories</a></li>
+        </ul>
+      </nav>
+
+      <div class="mobile-nav">
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+        <label class="nav__button" for="navi-toggle">
+          <span class="nav__icon"> &nbsp; </span>
+        </label>
+      </div>
     </header>
+
     <main>
       <section class="news-box mb-medium">
-        <div class="news-box--headline">
-          <div class="headline--img-box">
+        <div class="news-box__headline">
+          <div class="headline__img-box">
             <img
               class="headline-img"
               src="/assets/images/image-web-3-desktop.jpg"
@@ -58,7 +69,7 @@
             <a class="headline-description-btn" href="#">Read more</a>
           </div>
         </div>
-        <aside class="news-box--aside">
+        <aside class="news-box__aside">
           <h2 class="heading-secondary">New</h2>
           <div class="aside-preview">
             <h3 class="heading-tertiary">
@@ -96,13 +107,13 @@
       </section>
 
       <section class="news-readmore">
-        <div class="readmore--preview">
+        <div class="readmore__preview">
           <img
             src="/assets/images/image-retro-pcs.jpg"
             alt="retro pc"
             class="preview-img"
           />
-          <div class="preview--text-box">
+          <div class="preview__text-box">
             <span>01</span>
             <h4 class="heading-quaternary">
               <a href="#">Reviving Retro PCs</a>
@@ -113,13 +124,13 @@
           </div>
         </div>
 
-        <div class="readmore--preview">
+        <div class="readmore__preview">
           <img
             src="/assets/images/image-top-laptops.jpg"
             alt="laptop keyboard"
             class="preview-img"
           />
-          <div class="preview--text-box">
+          <div class="preview__text-box">
             <span>02</span>
             <h4 class="heading-quaternary">
               <a href="#">Top 10 Laptops of 2022</a>
@@ -130,13 +141,13 @@
           </div>
         </div>
 
-        <div class="readmore--preview">
+        <div class="readmore__preview">
           <img
             src="/assets/images/image-gaming-growth.jpg"
             alt="gaming controller"
             class="preview-img"
           />
-          <div class="preview--text-box">
+          <div class="preview__text-box">
             <span>03</span>
             <h4 class="heading-quaternary">
               <a href="#">The Growth of Gaming</a>
@@ -154,5 +165,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Anton K.</a>.
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
